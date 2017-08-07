@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Weather Zap";
+}
+
+
+<!-- Ten Day Forcast -->
+<div class="container">
+<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title text-center">Ten Day Forcast</h3>
+        </div>
+        <div class="panel-body">
+            <div id="ten_day_forecast" class="row list-inline" panel panel-primary></div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<!-- Current Conditions-->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <span id="location">Location: </span>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            <span><img id="forcast_img" scr="" alt="pic" /></span><br />
+            <span id="forcast_text">temp</span>
+        </div>
+        <div class="col-md-3">
+            <span id="temp_f">Temp: </span><br />
+            <span id="temp_feel"></span>
+        </div>
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div id="forcastModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <p></p>
+            </div>
+            <div class="modal-footer container">
+                <div class="row footer_row">
+                    <div class="col col-md-3 pull-left" id="high"></div>
+                    <div class="col col-md-5 pull-left"id="wind"></div>
+                    <div class="col"></div>
+                </div>
+                <div class="row footer_row">
+                    <div class="col col-lg-3 pull-left" id="low">Low:</div>
+                    <div class="col col-lg-5 pull-left" id="humidity">
+                    <div class="col">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

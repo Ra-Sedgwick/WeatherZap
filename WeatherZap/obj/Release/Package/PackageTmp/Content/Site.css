@@ -1,0 +1,74 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+
+#footer-row-1 {
+    padding-bottom: 10px;
+}
+/* Bootstrap Overrides
+---------------------------------------------*/
+body {
+    padding-top: 60px;
+}
+
+#ten_day_forecast li {
+    width: 10%;
+    text-align: center;
+}
+
+
+
+/*Prevent Page Shift When Modal Toggles*/
+body.modal-open, .modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
+    overflow: hidden !important;
+    padding-right: 0 !important;
+}
+
+/* Custome CSS
+--------------------------------------------*/
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.logo {
+    max-width: 125px;
+    padding-left: 5px;
+}
+
+
+/* Apply Border On Forcast Box */
+.cell_focus {
+
+    -webkit-box-shadow: inset 0px 0px 0px 2px #428bca;
+    -moz-box-shadow: inset 0px 0px 0px 2px #428bca;
+    box-shadow: inset 0px 0px 0px 2px #428bca;
+}
+
+/* Left Align Text In Forcast Box Footer*/
+.footer_row {
+    text-align: left;
+}
+
