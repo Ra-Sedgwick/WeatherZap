@@ -30,6 +30,10 @@
                         });
                 });
             }
+            else {
+                $('#location').text("Geolocation Is Disabled In Your Browser!");
+                $('#temp_f').text("Please seach by city or zipcode.")
+            }
 
             /* Auto complete location query */
             $('#query_input').keypress(function (e) {
@@ -145,11 +149,11 @@ function getWeather(zipcode) {
 
             console.log(data);
 
-            $("#location").text("Location: " +
+            $("#location").text(
                 data.current_observation.display_location.city + ", " +
                 data.current_observation.display_location.state);
 
-            $("#temp_f").text("Tempurature: " + data.current_observation.temperature_string);
+            $("#temp_f").text("Temperature: " + data.current_observation.temperature_string);
 
             $("#temp_feel").text("Feels Like: " + data.current_observation.feelslike_string);
 
@@ -165,6 +169,8 @@ function getWeather(zipcode) {
         .done(function (data) {
 
             console.log(data);
+
+            $('#todays-forcast').text(data.forecast.txt_forecast.forecastday["0"].fcttext);
 
             $("#ten_day_forecast").empty();
 

@@ -3,26 +3,19 @@
 }
 
 
-<!-- Ten Day Forcast -->
-<div class="container">
-<div class="row">
-    <div class="panel panel-primary">
-        <div class="panel-heading">
-            <h3 class="panel-title text-center">Ten Day Forcast</h3>
-        </div>
-        <div class="panel-body">
-            <div id="ten_day_forecast" class="row list-inline" panel panel-primary></div>
-        </div>
-    </div>
+<!-- Current Conditions-->
+<div class="jumbotron">
+    <h1 class="display-3" id="location"></h1>
+    <span id="temp_f">Temp: </span><br />
+    <span id="temp_feel"></span>
+    <p id="todays-forcast"></p>
 </div>
-</div>
-
 
 <!-- Current Conditions-->
-<div class="container">
+@*<div class="container">
     <div class="row">
         <div class="col-lg-12">
-            <span id="location">Location: </span>
+            <span id="location"></span>
         </div>
     </div>
     <div class="row">
@@ -39,7 +32,22 @@
         <div class="col-md-2">
         </div>
     </div>
+</div>*@
+
+<!-- Ten Day Forcast -->
+<div class="container">
+<div class="row">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title text-center">Ten Day Forcast</h3>
+        </div>
+        <div class="panel-body">
+            <div id="ten_day_forecast" class="row list-inline" panel panel-primary></div>
+        </div>
+    </div>
 </div>
+</div>
+
 
 <!-- Modal -->
 <div id="forcastModal" class="modal fade" role="dialog">
