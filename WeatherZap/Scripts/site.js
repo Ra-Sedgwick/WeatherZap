@@ -124,12 +124,12 @@ function updateModel(index, zipcode) {
             $('<b>Wind: <b>').appendTo('#wind');    
             $("#wind").append(wind);
 
-            var low = "Low:  " + data.forecast.simpleforecast.forecastday[index].low.fahrenheit;
+            var low = data.forecast.simpleforecast.forecastday[index].low.fahrenheit;
             $('#low').text('');
             $('<b>Low: <b>').appendTo('#low');
             $('#low').append(low);
 
-            var humidity = "Humidity: " +  data.forecast.simpleforecast.forecastday[index].avehumidity;
+            var humidity = data.forecast.simpleforecast.forecastday[index].avehumidity;
             $('#humidity').text('');
             $('<b>Humidity: <b>').appendTo('#humidity');
             $('#humidity').append(humidity);
