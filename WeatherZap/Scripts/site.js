@@ -32,7 +32,7 @@
             }
             else {
                 $('#location').text("Geolocation Is Disabled In Your Browser!");
-                $('#temp_f').text("Please seach by city or zipcode.")
+                $('#temp_f').text("Please seach by address.")
             }
 
             /* Auto complete location query */
